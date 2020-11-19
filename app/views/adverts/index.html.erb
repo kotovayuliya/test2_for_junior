@@ -1,0 +1,19 @@
+<h1>Adverts</h1>
+<% @adverts.each do |advert| %>
+<table>
+  <tr>
+    <td width="20%"><div><span class="icon" title="ТОП">TOP</span></div><%= advert.picture %></td>
+    <td>
+      <h3><%= advert.title %></h3>
+      <div class="bottom-cell"><%= advert.address %> <%= advert.created_at %>
+      </div>
+    </td>
+    <td width="10%"><div class="price"><%= advert.price %></div>
+      <div class="price_arranged"><%= advert.price_arranged %>
+        <div class="heart"><span style="font-size: 24px;">&#9825</span></div>
+      </div>
+    </td>
+  </tr>
+</table>
+<% end %>
+
