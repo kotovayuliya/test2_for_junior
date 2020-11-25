@@ -12,24 +12,14 @@
 
 ActiveRecord::Schema.define(version: 2020_11_11_005207) do
 
-  create_table "advertisements", force: :cascade do |t|
-    t.string "title"
-    t.string "address"
-    t.integer "price"
-    t.string "price_arranged"
-    t.string "picture"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "adverts", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.string "title"
     t.string "address"
     t.integer "price"
     t.string "price_arranged"
     t.string "picture"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

@@ -1,6 +1,6 @@
 class CreateAdverts < ActiveRecord::Migration[5.2]
   def change
-    create_table :advertisements do |t|
+    create_table :adverts do |t|
       t.string :title
       t.string :address
       t.integer :price
