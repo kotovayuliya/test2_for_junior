@@ -2,7 +2,12 @@
 <% @adverts.each do |advert| %>
 <table>
   <tr>
-    <td width="20%"><div><span class="icon" title="ТОП">TOP</span></div><%= advert.picture %></td>
+    <td width="20%">
+      <% if advert.top %>
+        <div><span class="icon" title="ТОП">TOP</span></div>
+      <% end %>
+      <%= advert.picture %>
+    </td>
     <td>
       <h3><%= advert.title %></h3>
       <div class="bottom-cell"><%= advert.address %> <%= advert.created_at %>
