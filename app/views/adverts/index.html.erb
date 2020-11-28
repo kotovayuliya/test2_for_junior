@@ -15,7 +15,7 @@
     </td>
     <td width="10%"><div class="price"><%= advert.price %></div>
       <div class="price_arranged"><%= advert.price_arranged %>
-        <div class="heart"><span style="font-size: 24px;">&#9825</span></div>
+        <div><%= toggle_favorite(advert) %></div>
       </div>
     </td>
   </tr>
