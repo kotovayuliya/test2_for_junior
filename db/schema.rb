@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_28_223151) do
+ActiveRecord::Schema.define(version: 2021_02_14_220111) do
 
   create_table "adverts", force: :cascade do |t|
     t.string "title"
     t.string "address"
-    t.integer "price"
-    t.string "price_arranged"
+    t.decimal "price"
+    t.string "negotiated_price"
     t.string "picture"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
